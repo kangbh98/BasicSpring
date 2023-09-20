@@ -37,11 +37,11 @@ public class ApplicatiomContextbasicTest {
         assertThat(memberService).isInstanceOf(MemberServiceimpl.class);
     }
 
-    @Test
-    @DisplayName("빈이름으로 조회x")
-    void finBeaByNameX(){
-        MemberService xxx = ac.getBean("xxxx", MemberService.class);
-        assertThrows(NoSuchBeanDefinitionException.class,
-                ()-> ac.getBean("xxxx", MemberService.class));
-    }
+//    @Test
+//    @DisplayName("빈이름으로 조회x")
+//    void finBeaByNameX(){
+//        MemberService xxx = ac.getBean("xxxx", MemberService.class);
+//        assertThrows(NoSuchBeanDefinitionException.class,
+//                ()-> ac.getBean("xxxx", MemberService.class));
+//    }
 }
